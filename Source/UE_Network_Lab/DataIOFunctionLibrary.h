@@ -13,5 +13,8 @@ UCLASS()
 class UE_NETWORK_LAB_API UDataIOFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
+
+	UFUNCTION(BlueprintCallable)
+	static bool LoadStringFromFile(FString FileName, FString& LoadedString);
 	
 };
